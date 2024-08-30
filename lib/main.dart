@@ -51,9 +51,7 @@ class SfDataGridDemoState extends State<SfDataGridDemo> {
                     }),
                     child: const Text('Change Theme')),
                 const Padding(padding: EdgeInsets.all(5)),
-                SizedBox(
-                  width: 500,
-                  height: 550,
+                Expanded(
                   child: SfDataGrid(
                     source: _employeeDataSource,
                     columns: getColumns,
